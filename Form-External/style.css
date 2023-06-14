@@ -1,0 +1,60 @@
+body {
+    background-color: #555;
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+.subscription-form {
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+
+}
+.subscription-form h1 {
+    margin-bottom: 10px;
+}
+.subscription-form>label .line{
+    border: 1px solid orangered;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 1px orangered;
+}
+.subscription-form>label,
+.subscription-form>.options>div
+ {
+    display: block;
+    padding: 5px;
+    
+}
+.subscription-form>label>input {
+    padding: 5px;
+    background-color: #ccc;
+
+}
+.subscription-form>label>input:focus {
+    background-color: orange;
+    box-shadow: 1px 1px 4px 5px orangered;
+
+}
+.subscription-form>button {
+    padding: 10px;
+}
+.subscription-form>button:hover {
+    background-color: darkorange;
+    box-shadow: 1px 1px 4px 1px orangered;
+
+}
+.subscription-form>.options input {
+    display: none;
+}
+.subscription-form>.options label:before {
+    content: "▢";
+    color: #999;
+
+}
+.subscription-form>.options input:checked + label:before {
+    content: "▣";
+    color: orange;
+    border-bottom: 1px solid orangered;
+}
