@@ -1,0 +1,50 @@
+body {
+    background-color: #234;
+}
+.preloader {
+    border: 1px dotted red;
+    width: 200px;
+    height: 200px;
+}
+.preloader .lg {
+    border: 5px solid #999;
+    border-top-color: transparent ;
+    border-radius: 105px;
+    /* HW1 : lg вылетел на 10 пикселей справа и на 10 пикселей вниз,потому что его бордер начинается от бордера preloader,
+    поэтому он ушел внутрь на 5 пикселей с верхней стороны и с левой стороны*/
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    animation: rot 10s infinite linear;
+}
+
+.preloader .sm {
+    border: 5px solid #09cfdd;
+    border-right-color: transparent;
+    border-radius: 85px;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+   /* transform: translateX(12px) translateY(12px); */
+    animation: rot1 10s infinite linear;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    } 
+}
+
+@keyframes rot1 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+
+}
