@@ -49,7 +49,6 @@
   #business-card .name h2 {
       color: #a78f49;
       font-size: 22px;
-      ;
   }
 
   #business-card .name small {
@@ -58,23 +57,29 @@
 
   }
 
-  #business-card .info li:before {
-      content: "✆";
-      color:#a78f49 ;
-      font-weight: bold;
-      margin-right: 2px;
+  #business-card .info li {
+      color: gray;
+      font-size: 12px;
+      padding: 1px;
   }
 
-  #business-card .info li:nth-child(2):before {
-      content: "🖃";
-      color: #a78f49;
-      font-weight: bold;
-      margin-right: 2px;
-  }
+   #business-card .info li:before {
+       content: "✆";
+       color: #a78f49;
+       font-weight: bold;
+       margin-right: 2px;
+   }
 
-  #business-card .info li:nth-child(3):before {
-      content: "🗺";
-      color: #a78f49;
-      font-weight: bold;
-      margin-right: 2px;
-  }
+   #business-card .info li:nth-child(2):before {
+       content: "🖃";
+       color: #a78f49;
+       font-weight: bold;
+       margin-right: 2px;
+   }
+
+   #business-card .info li:nth-child(3):before {
+       content: "🗺";
+       color: #a78f49;
+       font-weight: bold;
+       margin-right: 2px;
+   }
