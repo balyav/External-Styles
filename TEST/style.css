@@ -1,0 +1,77 @@
+  body {
+      background-color: #EEE;
+  }
+
+  h1,
+  h2,
+  p,
+  ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+
+  #business-card {
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      margin: 100px;
+      font-family: Arial;
+      box-shadow: 1px 1px 3px 1px black;
+
+
+  }
+
+  #business-card .name {
+      display: inline-block;
+      border-right: 2px solid white;
+      font-size: 15px;
+      color: white;
+      margin-left: 25px;
+      padding: 10px 10px;
+      text-align: right;
+
+  }
+
+  #business-card .info {
+      display: inline-block;
+      margin-top: 50px;
+      color: white;
+      padding: 5px;
+  }
+
+  #business-card .name h1 {
+      color: white;
+      font-size: 30px;
+      font-weight: normal;
+  }
+
+  #business-card .name h2 {
+      color: #a78f49;
+      font-size: 22px;
+      ;
+  }
+
+  #business-card .name small {
+      color: gray;
+      font-size: 12px;
+
+  }
+
+  #business-card .info li {
+      color: gray;
+      font-size: 12px;
+      padding: 1px;
+  }
+
+  #business-card .info li:before {
+      content: "📞";
+  }
+
+  #business-card .info li:nth-child(2):before {
+      content: "📧";
+  }
+
+  #business-card .info li:nth-child(3):before {
+      content: "🌏";
+  }
