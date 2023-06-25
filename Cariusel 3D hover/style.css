@@ -1,0 +1,42 @@
+#carousel {
+    margin-top: 100px;
+}
+#carousel .slides {
+    word-spacing: -4px;
+    text-align: center;
+    perspective: 1000px;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% -100px;
+
+}
+#carousel .slides:hover {
+    animation: rot 5s linear 10;
+}
+#carousel .slides img {
+    margin-top: 100px;
+    margin-left: -150px;
+    margin-right: -150px;
+    transform-origin: 50% 50% -100px;
+    opacity: 0.7;
+    border: 3px solid green;
+}
+#carousel .slides img:nth-child(3) {
+    transform: rotateY(0deg);
+}
+#carousel .slides img:nth-child(1) {
+    transform: rotateY(120deg);
+}
+#carousel .slides img:nth-child(2) {
+    transform: rotateY(240deg);
+}
+
+@keyframes rot {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+    
+}
