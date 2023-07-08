@@ -1,0 +1,96 @@
+body {
+    background-image: url(image-7mvi0g23.png);
+    background-repeat: repeat;
+}
+
+.paper-effect {
+    width: 1000px;
+    height: 600px;
+    border: 10px solid white;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    perspective: 1000px;
+}
+/*Не получилось с хувером сделать даже наоборот
+.paper-effect:hover div{
+    width: 100%;
+    height: 100%;
+    background-image: url(1000_F_223340377_y0rnkD1alUNxyefc2mdWZeMBsQVdao3P.jpg);
+
+}
+*/
+.paper-effect>div {
+    border: 1px solid black;
+    width: 198px;
+    height: 598px;
+    float: left;
+
+
+    background-image: url(1000_F_223340377_y0rnkD1alUNxyefc2mdWZeMBsQVdao3P.jpg);
+}
+
+.paper-effect>div:nth-child(2) {
+    
+    background-position: -200px 0px;
+    transform: translateX(-50px) rotateY(-45deg) scaleY(1.07);
+}
+
+.paper-effect>div:nth-child(2):after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, transparent 10%, rgba(255, 254, 254, 0.1) 100%);
+}
+
+.paper-effect>div:nth-child(3) {
+    background-position: -400px 0px;
+    transform: translateX(-110px) rotateY(45deg) scaleY(1.07);
+}
+
+.paper-effect>div:nth-child(3):after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.paper-effect>div:nth-child(4) {
+    background-position: -600px 0px;
+    transform: translateX(-170px) rotateY(-45deg) scaleY(1.07);
+}
+
+.paper-effect>div:nth-child(4):after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent 20%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.paper-effect>div:nth-child(5) {
+    background-position: 800px 0px;
+    transform: translateX(-230px) rotateY(45deg) scaleY(1.07);
+}
+
+.paper-effect>div:nth-child(5):after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background: linear-gradient(to left, transparent 0, rgba(0, 0, 0, 0.6) 100%)
+}
