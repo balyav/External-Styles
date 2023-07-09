@@ -1,0 +1,273 @@
+body {
+    background-color: #e8b295;
+
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#landscape {
+   background-image: url(winter-landscape-g407f93149_1920.jpg);
+   
+}
+#info  {
+    background:radial-gradient(rgb(255, 246, 246),rgb(75, 74, 74) 95%);
+    width: 300px;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+
+}
+#info > h3 {
+    position: absolute;
+    bottom: 80px;
+    right: 85px;
+}
+#info > .phone {
+   position: absolute;
+   bottom: 30px;
+   right: 175px;
+}
+#info>.mail{
+    position: absolute;
+    bottom: 30px;
+    right: 125px;
+}
+#info>.fb {
+    position: absolute;
+    bottom: 30px;
+    right: 75px  ;
+}
+.btn {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    box-shadow: 0 0px 1px 1px black;
+    position: absolute;
+    bottom: 140px;
+    right: 95px;
+}
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 0px 1px 2px green;
+}
+           
+
+#snow   {
+    /*background-color: #e8b295;*/
+}
+#snow .flake {
+    top: -10%;
+    width: 20px;
+    height: 20px;
+    background-color:#fffB;
+    /*border: 1px solid red; */
+    position: absolute;
+    animation: fall 7s linear infinite;
+    border-radius: 100%;
+    font-size: 0;
+    background: radial-gradient(white,rgb(211, 177, 126));
+}
+#snow .flake.md{
+    animation: fall 14s linear infinite;
+    width: 12px;
+    height: 12px;
+}
+#snow .flake.sm {
+    animation: fall 21s linear infinite;
+    width: 6px;
+    height: 6px;
+}
+#snow .flake:nth-child(1) {
+    left: 30%;
+    animation-delay: 2s;
+}
+#snow .flake:nth-child(2) {
+    left: 17%;
+    animation-delay: 2.5s;
+}
+#snow .flake:nth-child(3) {
+    left: 55%;
+    animation-delay: 10s;
+}
+#snow .flake:nth-child(4) {
+    left: 45%;
+    animation-delay: 7.5s;
+}
+#snow .flake:nth-child(5) {
+    left: 95%;
+    animation-delay: 3.5s;
+}
+
+#snow .flake:nth-child(6) {
+    left: 22%;
+    animation-delay: 5s;
+}
+
+#snow .flake:nth-child(7) {
+    left: 66%;
+    animation-delay: 2.5s;
+}
+
+#snow .flake:nth-child(8) {
+    left: 77%;
+    animation-delay: 10s;
+}
+
+#snow .flake:nth-child(9) {
+    left: 93%;
+    animation-delay: 7.5s;
+}
+
+#snow .flake:nth-child(10) {
+    left: 88%;
+    animation-delay: 3.5s;
+}
+#snow .flake.md:nth-child(11) {
+    left: 19%;
+    animation-delay: 5.6s;
+}
+
+#snow .flake.md:nth-child(12) {
+    left: 15%;
+    animation-delay: 2.9s;
+}
+
+#snow .flake.md:nth-child(13) {
+    left: 23%;
+    animation-delay: 7.8s;
+}
+
+#snow .flake.md:nth-child(14) {
+    left: 38%;
+    animation-delay: 1.7s;
+}
+
+#snow .flake.md:nth-child(15) {
+    left: 44%;
+    animation-delay: 4.5s;
+}
+#snow .flake.md:nth-child(16) {
+    left: 22%;
+    animation-delay: 5.6s;
+}
+
+#snow .flake.md:nth-child(17) {
+    left: 58%;
+    animation-delay: 2.9s;
+}
+
+#snow .flake.md:nth-child(18) {
+    left: 83%;
+    animation-delay: 7.8s;
+}
+
+#snow .flake.md:nth-child(19) {
+    left: 75%;
+    animation-delay: 1.7s;
+}
+
+#snow .flake.md:nth-child(20) {
+    left: 33%;
+    animation-delay: 5.3s;
+}
+#snow .flake.sm:nth-child(21) {
+    left: 48%;
+    animation-delay: 3.1s;
+}
+#snow .flake.sm:nth-child(22) {
+    left: 14%;
+    animation-delay: 2.1s;
+}
+#snow .flake.sm:nth-child(23) {
+    left: 31%;
+    animation-delay: 6.4s;
+}
+#snow .flake.sm:nth-child(24) {
+    left: 49%;
+    animation-delay: 8.5s;
+}
+#snow .flake.sm:nth-child(25) {
+    left: 51%;
+    animation-delay: 1.3s;
+}
+#snow .flake.sm:nth-child(26) {
+    left: 55%;
+    animation-delay: 5.3s;
+}
+#snow .flake.sm:nth-child(27) {
+    left: 19%;
+    animation-delay: 6.4s;
+}
+#snow .flake.sm:nth-child(28) {
+    left: 26%;
+    animation-delay: 7.2s;
+}
+#snow .flake.sm:nth-child(29) {
+    left: 34%;
+    animation-delay: 8.4s;
+}
+#snow .flake.sm:nth-child(30) {
+    left: 42%;
+    animation-delay: 3s;
+}
+#snow .flake.sm:nth-child(31) {
+    left: 13%;
+    animation-delay: 3.5s;
+}
+#snow .flake.sm:nth-child(32) {
+    left: 72%;
+    animation-delay: 4.1s;
+}
+#snow .flake.sm:nth-child(33) {
+    left: 65%;
+    animation-delay: 2.5s;
+}
+#snow .flake.sm:nth-child(34) {
+    left: 61%;
+    animation-delay: 5.1s;
+}
+#snow .flake.sm:nth-child(35) {
+    left: 99%;
+    animation-delay: 5.7s;
+}
+#snow .flake.sm:nth-child(36) {
+    left: 89;
+    animation-delay: 5s;
+}
+#snow .flake.sm:nth-child(37) {
+    left: 57%;
+    animation-delay: 4s;
+}
+#snow .flake.sm:nth-child(38) {
+    left: 68%;
+    animation-delay: 2s;
+}
+#snow .flake.sm:nth-child(39) {
+    left: 7%;
+    animation-delay: 3.8s;
+}
+#snow .flake.sm:nth-child(40) {
+    left: 90%;
+    animation-delay: 1s;
+}
+@keyframes fall {
+    /*Потому что она ничинается от верхней стороны,когда пишем 0 то она
+    начинается от своей верхней точки с начала окна,а 100% это она проходит весь путь и 
+    заканчивается когда верхняя точка снежка касается нижней части экрана,когда пишем -10%
+    то она начинается не с верхней стороны экрана,она так сказать не в окне*/
+    from {top: -10%;}
+    to {top: 100%;}
+}
