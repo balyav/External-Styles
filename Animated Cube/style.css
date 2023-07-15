@@ -1,0 +1,86 @@
+body {
+    background-color: #333;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 150px auto;
+    border: 1px solid white;
+    position: relative;
+    perspective: 1600px;
+}
+.cube {
+    transform-style: preserve-3d;
+    transform-origin: 100px 50%;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    animation: spin 10s linear infinite;
+}
+.cube  .faces {
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+}
+.front {
+    background-color: white;
+    transform: translateZ(100px);
+}
+.right {
+    background-color: red;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+    background-color: blue;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.back {
+    background-color: orange ;
+    transform: rotateX(180deg) translateZ(100px);
+}
+
+.top {
+    background-color: black;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    background-color: green;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+@keyframes spin {
+    from,to {
+        transform: rotateY(0deg) rotateX(0deg);
+    } 
+    35%{
+        transform: rotateY(360deg);
+    }
+    70% {
+        transform: rotateX(360deg);
+    }
+}
+
+/*.cube > .back {
+    transform: translateZ(-400px);
+}
+.cube > .left {
+    transform: rotateY(90deg);
+    transform-origin:left ;
+}
+.cube > .right {
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+.cube > .top {
+    transform: rotateX(-90deg);
+    transform-origin: top;
+} 
+.cube > .bottom {
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+} */
