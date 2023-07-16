@@ -1,0 +1,150 @@
+body {
+    background-image: radial-gradient(#6b6767, #333);
+    font-family: 'Nova Square', cursive;
+    perspective: 1500px;
+    padding: 0.1px;
+    margin: 0;
+}
+
+.book {
+    /* border:  1px solid green; */
+    width: 145mm;
+    height: 210mm;
+    margin: 10% auto;
+    transform: rotateY(-25deg);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    cursor: pointer;
+    display: block;
+}
+
+.book:hover {
+    transform: rotateY(-35deg);
+}
+
+/*default state*/
+.book .front-cover {
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    /*   border: 3px solid red; */
+    background-color: #0e5c8e;
+    position: absolute;
+    z-index: 1;
+    filter: contrast(1.0);
+    transform-origin: left;
+    transition: 1s;
+    z-index: 4;
+    backface-visibility: hidden;
+}
+
+.book .font-cover-back {
+    width: inherit;
+    height: inherit;
+    background-color: #0e5c8e;
+    position: absolute;
+    z-index: 3;
+    transform-origin: left;
+    transition: 1s;
+}
+
+.book input {
+    display: none;
+}
+
+.book input:checked+.front-cover,
+.book input:checked~.font-cover-back {
+    transform: rotateY(-100deg);
+}
+
+.book .front-cover::before {
+    content: "";
+    display: block;
+    width: 3%;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.116);
+
+}
+
+.book .front-cover::after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(-55deg, rgba(255, 255, 255, 0.397) 20%, transparent 60%);
+    position: absolute;
+    top: 0;
+}
+
+.book .front-cover img {
+    width: inherit;
+    height: 80%;
+    object-fit: cover;
+}
+
+.book .front-cover h1 {
+    font-size: 200%;
+}
+
+.book .front-cover h4 {
+    font-size: 150%;
+}
+
+.book .front-cover h1,
+.book .front-cover h2,
+.book .front-cover h3,
+.book .front-cover h4 {
+    text-align: center;
+    margin: 1% 0;
+    color: rgb(248, 219, 165);
+}
+.book .first-page{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: white;
+    transform-origin: left;
+    display: block;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.book .first-page-1 {
+    font-family: Arial;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    padding: 5%;
+    box-sizing: border-box;
+    transition: 1s;
+    transform-origin: left;
+    z-index: 5;
+}
+
+.book .back-cover {
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0e5c8e;
+    position: absolute;
+    transform: translateZ(-60mm);
+}
+
+.book .pages {
+    height: inherit;
+    width: 60mm;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    right: -58mm;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    background-image: repeating-linear-gradient(90deg, black, white 0.0001mm);
+}
+/*.book input:checked , 
+.book input:checked~.font-cover-back , */
+.first-page input:checked + .first-page-1 {
+    transform: rotateY(-90deg) 
+    ;
+}
