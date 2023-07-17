@@ -120,6 +120,16 @@ body {
     transition: 1s;
     transform-origin: left;
     z-index: 5;
+    backface-visibility: hidden;
+}
+.book .first-page-back {
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    transform-origin: left;
+    transition: 1s;
 }
 
 .book .back-cover {
@@ -142,9 +152,9 @@ body {
     transform-origin: left;
     background-image: repeating-linear-gradient(90deg, black, white 0.0001mm);
 }
-/*.book input:checked , 
-.book input:checked~.font-cover-back , */
-.first-page input:checked + .first-page-1 {
-    transform: rotateY(-90deg) 
+
+.first-page input:checked + .first-page-1,
+.first-page input:checked ~ .first-page-back{
+    transform: rotateY(-95deg) 
     ;
 }
