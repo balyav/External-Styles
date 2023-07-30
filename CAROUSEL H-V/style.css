@@ -1,0 +1,58 @@
+body {
+    /*setting*/
+    --color-active: white;
+    --color-bg: #333;
+    background-color: var(--color-bg);
+}
+.carousel {
+    width: 80%;
+    margin: 10% auto;
+   /* border: 1px solid red; */
+    overflow: hidden;
+}
+@media (min-width:800px) {
+    .carousel {
+            width: 700px;
+            margin: 45px auto;
+        }
+}
+.carousel .track {
+    width: 500%;
+}
+.carousel .track > div {
+   /* border: 3px solid yellow; */
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+.carousel .track > div img {
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.carousel .track>div:target img {
+    opacity: 1;
+}
+.carousel .track>div:nth-child(1) img {
+    opacity: 1;
+}
+.carousel .controls {
+    text-align: center;
+    margin: 1em;
+}
+.carousel .controls a {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background-color: var(--color-active);
+    border-radius: 100%;
+    color: transparent;
+    margin: 0 1em;
+
+}
+.carousel .controls a:first-child {
+    background-image: url(arrow/arrow-left-bold-circle.svg);
+}
+.carousel .controls a:last-child {
+    background-image: url(arrow/arrow-right-bold-circle.svg);
+}
