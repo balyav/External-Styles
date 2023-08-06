@@ -1,0 +1,426 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #333;
+    --Indigo:#4D49BF ;
+    --CornflowerBlue:#6863F2 ;
+    --ColdPurple: #9E9CD9;
+    --Concrete: #F2F2F2;
+    --DarkGrey:#333;
+    --Height: 1136px;
+    --Width: 640px;
+}
+
+.mockPhone{
+    background-color: var(--Indigo);
+    display: inline-block;
+    transform: scale(0.8);
+    padding: 60px 20px;
+    border-radius: 10%;
+    position: relative;
+}
+.mockPhone .dinamic {
+    width: 100px;
+    height: 10px;
+    background-color: var(--Indigo);
+    box-shadow: 0px 1px 3px 0px black;
+    position: absolute;
+    top: 25px;
+    left: 285px;
+}
+.mockPhone .sit{
+    width: 10px;
+    background-color: var(--Indigo);
+    position: absolute;
+    left: -5px;
+    border-radius: 20%;
+}
+.mockPhone .button-1{
+    height: 200px;
+    top: 200px;
+}
+.mockPhone .button-2 {
+    height: 100px;
+    top: 450px;
+}
+.mockPhone .screen {
+    width: var(--Width);
+    height: var(--Height);
+    border: 1px solid grey;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+
+/*VIBER*/
+#viber-app  {
+    background-color: var(--Concrete);
+    width: 100%;
+    height: 100%;
+   /* height: 100vh; */
+    border-radius: 3%;
+    position: relative;
+    font-size: 20px;
+}
+#viber-app header {
+    height: 7%;
+    width: 90%;
+    background-color: var(--Concrete);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    font-size: 50px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+}
+#viber-app section {
+    width: 100%;
+    height: 86%;
+}
+#viber-app footer {
+    height: 7%;
+    width: 100%;
+    background-color: var(--Concrete);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+
+
+}
+#viber-app .contacts {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+#viber-app .contacts li {
+    height: calc(100%/7.8);
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+/*SCROLL BAR DESIGN*/
+#viber-app .contacts::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--CornflowerBlue);
+    position: fixed;
+    display: none;
+}
+#viber-app .contacts:hover::-webkit-scrollbar,
+#viber-app .contacts:active::-webkit-scrollbar {
+    display: block;
+}
+#viber-app .contacts:first-child {
+    position: relative;
+}
+/*First*/
+#viber-app .contacts:first-child .contact {
+    width: 70%;
+    height: 10%;
+   /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 1%;
+}
+#viber-app .contacts .contact img {
+    width: 20%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    left: 4%;
+    border-radius: 40%;
+}
+#viber-app .contacts .contact h2 {
+    width: 70%;
+    height: 40%;
+   /* background-color: blue; */
+    position: absolute;
+    left: 27%;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: -0.09em;
+}
+#viber-app .contacts .contact p {
+    width: 50%;
+    height: 10%;
+  /*  background-color: blue; */
+    position: absolute;
+    left: 27%;
+    top: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    /*letter-spacing: -0.09em; */
+}
+#viber-app .contacts:first-child .data {
+    width: 15%;
+    height: 10%;
+   /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 1%;
+}
+#viber-app .contacts .time {
+    position: absolute;
+    top: 1vh;
+    right: 3vw;
+    color: var(--Indigo);
+}   
+#viber-app .contacts .data .buble {
+    background-color: var(--Indigo);
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    bottom: 4vh;
+    right: 3vw;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+}
+#viber-app .contacts .data .buble .count {
+    position: absolute;
+    color: white;
+    margin: 0.3em 0.5em;
+}
+/*Second*/
+#viber-app .contacts li:nth-child(2) .contact {
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 15vh;
+}
+
+#viber-app .contacts li:nth-child(2) .data {
+    width: 15%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 15vh;
+}
+/*Third*/
+#viber-app .contacts li:nth-child(3) .contact {
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 28vh;
+}
+
+#viber-app .contacts li:nth-child(3) .data {
+    width: 20%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 28vh;
+}
+#viber-app .contacts li:nth-child(3) .data .buble {
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 5%;
+    right: 80%;
+}
+#viber-app .contacts li:nth-child(3) .data .buble .count {
+    color: var(--Indigo);
+}
+/*Fourth*/
+#viber-app .contacts li:nth-child(4) .contact {
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 42vh;
+}
+
+#viber-app .contacts li:nth-child(4) .data {
+    width: 20%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 42vh;
+}
+#viber-app .contacts li:nth-child(4) .data .buble {
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 5%;
+    right: 100%;
+}
+
+#viber-app .contacts li:nth-child(4) .data .buble .count {
+    color: grey;
+}
+/*5*/
+#viber-app .contacts li:nth-child(5) .contact {
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 55vh;
+}
+
+#viber-app .contacts li:nth-child(5) .data {
+    width: 20%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 55vh;
+}
+#viber-app .contacts li:nth-child(5) .data .buble {
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 5%;
+    right: 100%;
+}
+
+#viber-app .contacts li:nth-child(5) .data .buble .count {
+    color: grey;
+}
+/*6*/
+#viber-app .contacts li:nth-child(6) .contact {
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 69vh;
+}
+
+#viber-app .contacts li:nth-child(6) .data {
+    width: 20%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 69vh;
+}
+#viber-app .contacts li:nth-child(6) .data .buble {
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 5%;
+    right: 100%;
+}
+
+#viber-app .contacts li:nth-child(6) .data .buble .count {
+    color: grey;
+}
+/*7*/
+#viber-app .contacts li:nth-child(7) .contact {
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 83vh;
+}
+
+#viber-app .contacts li:nth-child(7) .data {
+    width: 20%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 83vh;
+}
+#viber-app .contacts li:nth-child(7) .data .buble {
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 5%;
+    right: 100%;
+}
+
+#viber-app .contacts li:nth-child(7) .data .buble .count {
+    color: var(--Indigo);
+}
+/*8*/
+#viber-app .contacts li:nth-child(8) .contact {
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    top: 97vh;
+}
+
+#viber-app .contacts li:nth-child(8) .data {
+    width: 20%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    right: 2%;
+    top: 97vh;
+}
+#viber-app .contacts li:nth-child(8) .data .buble {
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 5%;
+    right: 100%;
+}
+
+#viber-app .contacts li:nth-child(8) .data .buble .count {
+    color: var(--Indigo);
+}
+
+#viber-app footer .chat {
+    position: absolute;
+    left: 15%;
+    bottom: 1%;
+    font-size: 40px;
+    color: #4D49BF;
+}
+#viber-app footer .chat .notice {
+    font-size: 20px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    border-radius: 100%;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+#viber-app footer .chat .notice .not-count {
+    position: absolute;
+    margin: 0.2em 0.4em;
+}
+#viber-app footer .phone {
+    position: absolute;
+    left: 47%;
+    bottom: 1%;
+    font-size: 40px;
+    color: grey;
+}
+#viber-app footer .menu {
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+    font-size: 40px;
+    color: grey;
+}
+
+
+
+/*ADAPTIVE*/
+@media (orientation:landscape) {
+    #viber-app .contacts li {
+        height: calc(100%/3.7);
+    }
+}
+@media (orientation:landscape) and (min-aspect-ratio:18/10) {
+    #viber-app .contacts li {
+        height: calc(100%/2.7);
+    }
+}
