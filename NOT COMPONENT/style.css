@@ -1,0 +1,129 @@
+body {
+    --DarkColor: #333;
+    --LightColor: #1e08a0;
+    --BellColor:rgb(250, 250, 250);
+    --NotColor:red;
+    margin: 0;
+    background-color: var(--DarkColor);
+}
+.navbar {
+    background-color: var(--LightColor);
+    color: var(--BellColor);
+    padding: 1rem;
+    font-family: Arial;
+}
+.navbar span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar-notification {
+    /*set*/
+    --size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 90em;
+    position: relative;
+}
+@media (max-width:1000px) {
+    .navbar-notification{
+     --size:1rem;
+       margin-left: 20em;
+    }
+}
+.navbar-notification label {
+   /*background-image: url(bell.svg); */
+    background-color: var(--BellColor);
+    mask: url(bell.svg);
+    -webkit-mask: url(bell.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: var(--size);
+    height: var(--size);
+    cursor: pointer;
+    transform: rotate(0deg);
+    transform-origin: top;
+    animation:swing .2s 5;
+}
+.navbar-notification .badge {
+    font-size: calc(var(--size) / 2);
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: var(--NotColor);
+    text-align: center;
+    line-height: 1em;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    animation: fade 1s 1s;
+    animation-fill-mode: forwards;
+}
+.navbar-notification input[type="checkbox"] {
+   display: none ;
+}
+.navbar .list {
+    position: absolute;
+    right: calc(var(--size) * -1.7 );
+    background-color: var(--LightColor);
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+.navbar .list li {
+    padding: calc(var(--size) * 0.3);
+    border-bottom: 1px solid black;
+    padding: calc(var(--size) * .8);
+}
+.navbar .not {
+    display: inline-block;
+    height: 1em;
+    position: absolute;
+    top: calc(var(--size) * 1.9);
+    right: calc(var(--size) * -2.7);
+    background-color: var(--LightColor);
+    height: 5em;
+    width: 10em;
+    text-align: center;
+    line-height: 5em;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 3% 3% 3% 3%; 
+   opacity: 0;
+
+    animation: fadeNot 4s  1.5s;
+}
+.navbar .not::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--size) * -1.1);
+    right: calc(var(--size) * 2.5);
+    border: 20px solid transparent;
+    border-bottom: 15px solid var(--LightColor);
+
+}
+.navbar input:checked + .list{
+    display: block;
+}
+
+
+@keyframes swing {
+    0%  {transform: rotate(0); }
+    25%  {transform: rotate(15deg); }
+    50% {transform: rotate(0); }
+    75% {transform: rotate(-15deg); }
+    100%  {transform: rotate(0); }
+}
+@keyframes fade {
+    0%  { opacity: 0;}
+    100%  {opacity: 1;}
+}
+@keyframes fadeNot {
+    0%  { opacity: 0;}
+    100%  {opacity: 1;}
+}

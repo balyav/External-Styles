@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+       <span> NOTIFICATION  COMPONENT </span>
+
+        <!--NOT COMPONENT-->
+        <div       
+
+            role="alert"    
+            aria-describedby="notification-label"
+            aria-live="polite"
+
+
+            class="navbar-notification">
+        <label id="notification-label" for="not-toggler">notifications</label>
+        <div>
+            <input id="not-toggler" type="checkbox">
+            <ul class="list">
+                <li>Bам поставили лайк</li>
+                <li>Заявка в друзья</li>
+                <li>Марина звонила вам</li>
+                <li>1 сообщение от Коля</li>
+            </ul>
+        </div>
+        <span class="badge">4</span>
+        <span class="not">Вам поставили лайк</span>
+    </div>
+    </nav>
+</body>
+</html>
