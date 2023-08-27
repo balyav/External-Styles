@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Belanosima&family=Inter:wght@200&family=Lora:ital,wght@0,400;1,500&family=Montserrat:wght@100;200&family=Noto+Sans:wght@400;700&family=Nova+Square&family=Poppins:wght@300&family=Raleway:wght@200&family=Roboto:wght@100&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="main-menu">
+        <a href="">
+            <picture >
+                <source srcset="images/logo-128.png" media="(min-width:461px)">
+            <img src="images/logo-64.png" alt="dota logo">
+
+            </picture>
+        </a>
+        <a class="toggler" href="#main-menu"><i class="fa-solid fa-bars"></i></a>
+        <ul>
+            <li><a href="">Forum</a></li>
+            <li><a href="">Top MMR</a></li>
+            <li><a href="">Sing Up</a></li>
+        </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+    $(window).scroll(function () {
+        var windowYmax = 50;
+        var scrolledY = $(window).scrollTop();
+
+        if (scrolledY > windowYmax) {
+
+            $('.navbar').addClass("scrolled");
+        } else {
+            $('.navbar').removeClass("scrolled");
+        }
+    });
+    </script>
+
+</body>
+</html>
